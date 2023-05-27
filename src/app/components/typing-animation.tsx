@@ -24,7 +24,7 @@ export function TypingAnimation(): JSX.Element {
     }, [])
 
     return (
-        <div className="pt-5">
+        <div className="pt-5 h-38">
             <span className="whitespace-pre" ref={elementRef} />
         </div>
     )
