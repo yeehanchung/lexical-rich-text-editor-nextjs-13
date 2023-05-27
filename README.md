@@ -1,4 +1,7 @@
+![GitHub deployments](https://img.shields.io/github/deployments/yeehanchung/lexical-rich-editor-nextjs-13/Production?label=vercel&logo=vercel&logoColor=white)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
 
 ## Getting Started
 
