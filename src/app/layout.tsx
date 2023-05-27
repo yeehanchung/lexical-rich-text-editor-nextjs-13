@@ -5,9 +5,9 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Lexical Rich Editor | Next.js 13',
+  title: 'Lexical Rich Text Editor | Next.js 13',
   description: 'Prepopulated with daily standup text',
-  keywords: ["lexical", "lexical rich editor", "daily standup", "next.js", "next.js 13"]
+  keywords: ["lexical", "lexical rich text editor", "daily standup", "next.js", "next.js 13"]
 }
 
 export default function RootLayout({

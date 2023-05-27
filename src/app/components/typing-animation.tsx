@@ -10,7 +10,7 @@ export function TypingAnimation(): JSX.Element {
     React.useEffect(() => {
         const options = {
             strings: [
-                "This is a^500 <strong>Daily Standup Editor</strong>^1000\nBuild with Nextjs 13"
+                "This is a^500 <strong>Lexical Rich Text Editor</strong>^1000\nBuild with Nextjs 13"
             ],
             typeSpeed: 50,
             backSpeed: 50,
