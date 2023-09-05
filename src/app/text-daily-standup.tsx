@@ -12,24 +12,35 @@ export function textDailyStandup() {
     /**
      * Today's Standup date
      */
-    const paragraph = $createParagraphNode();
+    const paragraphParent = $createParagraphNode();
     const currentDate = new Date();
     const todayStandupDate = format(currentDate, "ddMMyyyy");
-    paragraph.append(
+    paragraphParent.append(
         $createTextNode(`/${todayStandupDate}`),
     );
 
-    /**
-     * Focusing
-    */
-    const paragraph2 = $createParagraphNode();
-    paragraph2.append($createTextNode("#focusing"));
+    const paragraphTwo = $createParagraphNode();
+    paragraphTwo.append($createTextNode("#focusing"));
+    const listForParagraphTwo = $createListNode("bullet");
+    listForParagraphTwo.append(
+        $createListItemNode().append(
+            $createTextNode(`..`)
+        )
+    );
 
-    /**
-     * Focusing list
-    */
-    const list = $createListNode("bullet");
-    list.append(
+    const paragraphThree = $createParagraphNode();
+    paragraphThree.append($createTextNode("#queue"));
+    const listForParagraphThree = $createListNode("bullet");
+    listForParagraphThree.append(
+        $createListItemNode().append(
+            $createTextNode(`..`)
+        )
+    );
+
+    const paragraphFour = $createParagraphNode();
+    paragraphFour.append($createTextNode("#achieved"));
+    const listForParagraphFour = $createListNode("bullet");
+    listForParagraphFour.append(
         $createListItemNode().append(
             $createTextNode(`..`)
         )
@@ -38,7 +49,9 @@ export function textDailyStandup() {
     /**
      * Root
      */
-    root.append(paragraph);
-    root.append(paragraph2);
-    root.append(list);
+    root.append(paragraphParent);
+    root.append(paragraphTwo);
+    root.append(listForParagraphTwo);
+    root.append(paragraphThree);
+    root.append(paragraphFour);
 }
